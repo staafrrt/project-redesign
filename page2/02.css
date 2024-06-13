@@ -22,7 +22,7 @@ main{
 
 /* 左側選單 */
 aside{
-    /* outline:lightblue solid; */
+    
     background-color: #F7F9FA;
     padding: 0 24px;
     border-radius: 16px;
@@ -111,20 +111,22 @@ li a{
 
 /* 搜尋框 */
 .search{
-    
+    outline: red 1px solid;
     border:#9279BA 1px solid;
     border-radius: 60px;
     color: #b9b9b9;
     padding: 8px 24px;
-    margin: 48px 24px;
+    margin: 48px 24px 24px 24px;
     display: flex;
     align-items: center;
     
 }
 
+
+
 .material-icons-round{
   color: #9279BA;
-
+ 
 }
 
 /* 篩選器 */
@@ -136,16 +138,14 @@ li a{
 }
 
 .filter li{
-  padding: 24px 8px;
+  padding: 24px 24px 24px 0;
 }
 
-.filter li:nth-child(1),:nth-child(2),:nth-child(3){
-  padding-left: 0;
-}
+
 /* 課程表格 */
 
 .table {
-    outline: lightgreen solid;
+    /* outline: lightgreen solid; */
     display: table;
     text-align: center;
     width: 100%;
