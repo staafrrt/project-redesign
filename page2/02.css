@@ -8,7 +8,8 @@
     line-height: 24px;
     color: #333333;
     padding:0 70px;
-    background-image: url(../picture/background.jpg);
+    background-image: url(../picture/background4.jpg);
+    
     
 }
 
@@ -27,8 +28,7 @@ aside{
     padding: 0 24px;
     border-radius: 16px;
     box-shadow: 5px 0 10px #AB96C5 ;
-    
-    
+    margin-bottom: 48px;
 }
 
 li h1{
@@ -38,9 +38,13 @@ li h1{
     margin: 24px 0;
 }
 
-li a{
+aside a{
     text-decoration: none;
     color: #9279BA;
+}
+
+.system li:last-child{
+  margin-bottom: 24px;
 }
 
 .wrapper main{
@@ -57,7 +61,7 @@ li a{
 .progress{
   display: flex;
 }
-.progress li {
+.progress li{
   
   list-style-type: none;
   width: 33.33%;
@@ -70,9 +74,9 @@ li a{
 .progress li:before {
   font-family: "Material Icons Round";
   content: "radio_button_checked";
-  width: 30px;
-  height: 30px;
-  line-height:30px;
+  width: 48px;
+  height: 48px;
+  line-height:48px;
   /* border:1px solid #ddd; */
   display:block;
   text-align:center;
@@ -111,7 +115,7 @@ li a{
 
 /* 搜尋框 */
 .search{
-    outline: red 1px solid;
+    
     border:#9279BA 1px solid;
     border-radius: 60px;
     color: #b9b9b9;
@@ -121,8 +125,6 @@ li a{
     align-items: center;
     
 }
-
-
 
 .material-icons-round{
   color: #9279BA;
@@ -139,8 +141,33 @@ li a{
 
 .filter li{
   padding: 24px 24px 24px 0;
+  position: relative;
+  cursor: pointer;
 }
 
+.semester{
+  text-align: center;
+}
+
+
+ol{
+  background-color: #F7F9FA;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+
+}
+
+ol li{
+  display: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul li:hover ol li{
+  display: block;
+  
+}
 
 /* 課程表格 */
 
