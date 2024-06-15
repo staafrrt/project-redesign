@@ -1,5 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url("reset.css");
 
+
 .wrapper{
-    padding:0 20px;
+    font-family: "Noto Serif TC", serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    padding:0 70px;
+    background-image: url(../picture/background4.jpg);
+    
+    
+}
+
+nav{
+    outline: red solid;
+}
+
+main{
+    outline:lightcoral solid;
+}
+
+/* 左側選單 */
+aside{
+    
+    background-color: #F7F9FA;
+    padding: 0 24px;
+    border-radius: 16px;
+    box-shadow: 5px 0 10px #AB96C5 ;
+    margin-bottom: 48px;
+}
+
+li h1{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 24px 0;
+}
+
+aside a{
+    text-decoration: none;
+    color: #9279BA;
+}
+
+.system li:last-child{
+  margin-bottom: 24px;
+}
+
+
+.wrapper main{
+    display: flex;
+}
+
+.right{
+    margin-left: 48px;
+}
+
+/* 右側主選區 */
+
+.right ul{
+    display: flex;
+    outline: red solid;
+    
+}
+
+.right ul>li{
+    outline: peru solid;
+    margin: 24px;
+    padding: 0 12px;
+    
 }
