@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url("reset.css");
 
+body{
+  background-image: url(../picture/background4.jpg);
+}
 
 .wrapper{
     font-family: "Noto Serif TC", serif;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
-    padding:0 70px;
-    background-image: url(../picture/background4.jpg);
+    /* padding:0 70px; */
+    margin: 0 5%;
+    
     
     
 }
 
 nav{
     outline: red solid;
+    width: 100%;
 }
 
 main{
     outline:lightcoral solid;
+    width: 100%;
 }
 
 /* 左側選單 */
 aside{
-    
+    width: 20%;
     background-color: #F7F9FA;
     padding: 0 24px;
     border-radius: 16px;
@@ -58,7 +64,8 @@ aside a{
 }
 
 .right{
-    margin-left: 48px;
+    width: 75%;
+    margin-left: 5%;
 }
 
 
@@ -126,7 +133,7 @@ aside a{
     border-radius: 60px;
     color: #b9b9b9;
     padding: 8px 24px;
-    margin: 48px 24px 24px 24px;
+    margin: 48px 10% 24px 10%;
     display: flex;
     
     
@@ -140,10 +147,12 @@ aside a{
 /* 篩選器 */
 /* 第一層 */
 .filter{
-    
+    outline: red solid;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 10%;
+    
 }
 
 .filter>li{
@@ -167,6 +176,7 @@ aside a{
   position: absolute;
   z-index: 1;
   margin-top: 24px;
+  box-sizing: border-box;
 }
 
 ol li{
@@ -191,7 +201,7 @@ ol li:hover{
     /* outline: lightgreen solid; */
     display: table;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     margin: 10% auto 0;
     border-collapse: separate;
     background-color: #F7F9FA;
