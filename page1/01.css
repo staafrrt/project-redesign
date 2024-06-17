@@ -101,8 +101,8 @@ aside a{
 .course{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    justify-content: start;
+    justify-content: space-between;
+    /* justify-content: start; */
     margin-bottom: 5rem;
     
       
@@ -110,7 +110,8 @@ aside a{
 
 .course li{
     padding: 1rem;
-    margin: 2rem;
+    /* margin: 2rem; */
+    width: 13%;
     cursor: pointer;
     font-size: 22px;
     line-height: 28px;
@@ -122,18 +123,23 @@ aside a{
 .bottom{
     display: flex;
     width: 100%;
+    
 }
 
 .bottom li{
     padding: 1rem;
-    margin: 2rem;
+    /* margin: 2rem; */
+    width: 12%;
     cursor: pointer;
     font-size: 22px;
     line-height: 28px;
     writing-mode: vertical-lr;
-    border-left: #9279BA 1px dashed;   
+    border-left: #9279BA 1px dashed;  
 
 }
+
+
+
 
 .right img{
     margin: 0 auto;
@@ -144,6 +150,15 @@ aside a{
     
 }
 
+/* hover效果 */
+
+.course li:hover{
+    color: #9279BA;
+}
+
+.bottom li:hover{
+    color: #9279BA;
+}
 
 
 
