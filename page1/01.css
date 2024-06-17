@@ -1,42 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url("reset.css");
 
+body{
+  background-image: url(../picture/background4.jpg);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* icon顏色 */
+.material-icons-round{
+    color: #9279BA;
+   
+}
 
 .wrapper{
     font-family: "Noto Serif TC", serif;
-    font-size: 16px;
-    line-height: 24px;
     color: #333333;
-    padding:0 70px;
-    background-image: url(../picture/background4.jpg);
+    margin: 0 5vw;
+    height: 100vh;
     
     
 }
 
 nav{
-    outline: red solid;
+    
+    /* outline: red solid; */
+    width: 100%;
+    
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    
+}
+
+img{
+  width: 26%;
+  aspect-ratio: 2.5 / 1;
 }
 
 main{
-    outline:lightcoral solid;
+    /* outline:lightcoral solid; */
+    width: 100%;
 }
 
 /* 左側選單 */
+.burger{
+  display: none;
+}
+
 aside{
-    
+    width: 20%;
     background-color: #F7F9FA;
-    padding: 0 24px;
+    padding: 0 1.5rem;
     border-radius: 16px;
     box-shadow: 5px 0 10px #AB96C5 ;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    
 }
 
 li h1{
     font-size: 22px;
     font-weight: bold;
     line-height: 28px;
-    margin: 24px 0;
+    margin: 1.5rem 0;
 }
+
+/* aside li:hover li a{
+  color: red;
+} */
 
 aside a{
     text-decoration: none;
@@ -48,25 +79,117 @@ aside a{
 }
 
 
+
 .wrapper main{
     display: flex;
 }
 
 .right{
-    margin-left: 48px;
-}
-
-/* 右側主選區 */
-
-.right ul{
+    width: 75%;
+    margin-left: 5%;
+    margin-bottom: 3rem;
+    outline: coral 1px solid;
     display: flex;
-    outline: red solid;
+    flex-direction: column;
+    
     
 }
 
-.right ul>li{
-    outline: peru solid;
-    margin: 24px;
-    padding: 0 12px;
+/* 搜尋區 */
+
+
+.course{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-content: start;
+    margin-bottom: 5rem;
+    
+      
+}
+
+.course li{
+    padding: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 28px;
+    writing-mode: vertical-lr;
+    border-left: #9279BA 1px dashed;   
+
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+}
+
+.bottom li{
+    padding: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 28px;
+    writing-mode: vertical-lr;
+    border-left: #9279BA 1px dashed;   
+
+}
+
+.right img{
+    margin: 0 auto;
+    width: 60%;
+    aspect-ratio:4/3;
+    opacity: 80%;
+    border-radius: 5%;
     
 }
+
+
+
+
+
+
+
+
+
+  
+  /* RWD */
+  @media screen and (max-width: 900px) {
+    
+  }
+  
+  @media screen and (max-width: 650px) {
+    /* 導航列 */
+
+    body{
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+    }
+    nav{
+      display: flex;
+      justify-content: center;
+      background-color: #F7F9FA;
+    }
+
+    
+
+    /* 側選單 */
+    aside{
+      display: none;
+    }
+    .burger{
+      display : block;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+
+    .burger :hover aside{
+      display: block;
+      position: relative;
+    }
+
+
+    
+
+    
+  }
