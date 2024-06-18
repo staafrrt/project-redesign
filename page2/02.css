@@ -55,20 +55,25 @@ aside{
     padding: 0 1.5rem;
     border-radius: 16px;
     box-shadow: 5px 0 10px #AB96C5 ;
-    margin-bottom: 3rem;
-  
+    margin-bottom: 3rem; 
 }
 
-li h1{
+aside li>h1{
     font-size: 22px;
     font-weight: bold;
     line-height: 28px;
     margin: 1.5rem 0;
 }
+.aside-search{
+ display: flex;
+ margin-top: 2rem;
+ 
+}
 
-/* aside li:hover li a{
-  color: red;
-} */
+.aside-input{
+  font-size: 16px;
+}
+
 
 aside a{
     text-decoration: none;
@@ -78,6 +83,7 @@ aside a{
 .system li:last-child{
   margin-bottom: 24px;
 }
+
 
 
 

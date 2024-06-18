@@ -58,7 +58,7 @@ aside{
   
 }
 
-li h1{
+aside li>h1{
     font-size: 22px;
     font-weight: bold;
     line-height: 28px;
@@ -68,6 +68,15 @@ li h1{
 /* aside li:hover li a{
   color: red;
 } */
+.aside-search{
+    display: flex;
+    margin-top: 2rem;
+    
+}
+   
+.aside-input{
+    font-size: 16px;
+}
 
 aside a{
     text-decoration: none;
@@ -145,6 +154,12 @@ input[type="search"]{
 
 .result-a{
     cursor: pointer;
+}
+
+
+
+.result-a:hover{
+    
 }
 
 .result-b{

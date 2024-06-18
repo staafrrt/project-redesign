@@ -58,7 +58,7 @@ aside{
     
 }
 
-li h1{
+aside li>h1{
     font-size: 22px;
     font-weight: bold;
     line-height: 28px;
@@ -68,6 +68,22 @@ li h1{
 /* aside li:hover li a{
   color: red;
 } */
+
+.aside-search{
+    display: flex;
+    margin-top: 2rem;    
+}
+   
+.aside-input{
+    font-size: 16px;
+}
+
+input[type="search"]{
+    border:none;
+    outline: none;
+    background-color: transparent;
+    font-family: "Noto Serif TC", serif;
+}
 
 aside a{
     text-decoration: none;
