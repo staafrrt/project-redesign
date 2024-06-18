@@ -17,20 +17,18 @@ body{
     font-family: "Noto Serif TC", serif;
     color: #333333;
     margin: 0 5vw;
-    height: 100vh;
-    
-    
+    height: 100vh;    
 }
 
+
 nav{
-    
-    /* outline: red solid; */
-    width: 100%;
-    
-    /* position: fixed;
-    top: 0;
-    left: 0; */
-    
+  /* outline: red solid; */
+  width: 100%;
+  height: 10vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;       
 }
 
 img{
@@ -38,9 +36,15 @@ img{
   aspect-ratio: 2.5 / 1;
 }
 
+nav.nav-scrolled{
+  background: linear-gradient(180deg, #cfd9df 0%, #e2ebf0 100%);
+  opacity: 0.6;
+}
+
 main{
     /* outline:lightcoral solid; */
     width: 100%;
+    padding-top: 10vw;
 }
 
 /* 左側選單 */
@@ -104,7 +108,7 @@ aside a{
     width: 75%;
     margin-left: 5%;
     margin-bottom: 3rem;
-    outline: coral 1px solid;
+    /* outline: coral 1px solid; */
     display: flex;
     flex-direction: column;
     
@@ -138,6 +142,7 @@ aside a{
 
 .bottom{
     display: flex;
+    justify-content: flex-end;
     width: 100%;
     
 }
@@ -150,8 +155,9 @@ aside a{
     font-size: 22px;
     line-height: 28px;
     writing-mode: vertical-lr;
-    border-left: #9279BA 1px dashed;  
-
+    border-right: #9279BA 1px dashed;  
+    
+    
 }
 
 
@@ -181,5 +187,88 @@ aside a{
 
   
   /* RWD */
+
+  @media screen and (max-width: 1024px) {
+    aside {
+      width: 25%;
+    }
+    .right {
+      width: 70%;
+      margin-left: 5%;
+    }
+  }
   
+  @media screen and (max-width: 768px) {
+    .burger {
+      display: block;
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    aside {
+      display: none;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      /* background-color: #F7F9FA; */
+    }
+    .right {
+      width: 100%;
+      margin: 0;
+    }
+    .course,
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+    .course li,
+    .bottom li {
+      width: 80%;
+      writing-mode: horizontal-tb;
+      text-align: center;
+      border: none;
+      border-bottom: #9279BA 1px dashed;
+    }
+
+    .bottom{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    nav img {
+      width: 50%;
+    }
+    .right img {
+      width: 80%;
+    }
+    .course li,
+    .bottom li {
+      font-size: 18px;
+    }
+
+    .bottom{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  
+    .search {
+      margin: 1rem 5%;
+      padding: 0.25rem 0.75rem;
+    }
+  
+    .text {
+      font-size: 24px;
+    }
+  }
   
