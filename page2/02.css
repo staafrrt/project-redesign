@@ -115,9 +115,16 @@ aside a{
   
   text-align:center;
 }
+#done01{
+  color:gray
+}
 
 .active{
   color: #9279BA;
+}
+
+#none01{
+  color: gray;
 }
 
 .line{

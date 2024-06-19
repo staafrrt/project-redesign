@@ -119,9 +119,19 @@ aside a{
 }
 
 .active{
-  color: #9279BA;
+  /* color: #9279BA; */
+}
+#active01{
+  color: gray;
 }
 
+#done01{
+  color: gray;
+}
+
+.none{
+  color: #9279BA;
+}
 .line{
   border: #613B9F 3px;
   height:1px;
