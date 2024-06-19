@@ -5,11 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02課程搜尋</title>
-    <link rel="stylesheet" href="02.css">
-    <link rel="stylesheet" href="02rwd.css">
+    <title>03課程搜尋</title>
+    <link rel="stylesheet" href="page3/03.css">
+    <link rel="stylesheet" href="page3/03rwd.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"rel="stylesheet">
-    <script src="02.js"></script>
+    <script src="page3/03.js"></script>
+    
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
         <!-- 上方導航列 -->
         <nav id="nav">
-            <img src="../picture/nav-logo.png" alt="">
+            <img src="picture/nav-logo.png" alt="">
         </nav>
 
 
@@ -117,70 +118,87 @@
                     <input 
                     type="search"
                     placeholder="可輸入課程、教師名稱">
-                    
-                    
-
-                    <!-- <span class="hint">可輸入課程、教師名稱</span>  -->
 
                 </div>
 
+                
+                <div class="text">查詢結果</div>
+
+                <div class="result">
+                    
+
+                    <div class="result-a">
+                        <span id="exit" class="material-icons-round">logout</span>
+                        <h4>離開</h4>
+                    </div>
+                    <div class="result-b">
+                        <span id="re-search" class="material-icons-round">find_replace</span>
+                        <h4>重新搜尋</h4>
+                    </div>
+                    <div class="result-c">
+                        <span id="print" class="material-icons-round">local_printshop</span>
+                        <h4>列印</h4>
+                    </div>
+                </div>
 
                 <!-- 篩選器 -->
-
-                <ul class="filter">
-                    
-                    <li>
+                <div class="filterbox">
+                    <ul class="filter">
                         
+                        <li>
+                            
+                            <div class="semester">
+                            <span class="material-icons-round">keyboard_arrow_down</span>
+                            學期
+                            </div>
+                            <ol>
+                                <li>113上(2024-Fall)</li>
+                                <li>112暑(2024-Summer)</li>
+                                <li>112下(2024-Spring)</li>
+                                <li>112上(2023-Fall)</li>
+                                <li>111暑(2023-Summer)</li>
+                                <li>111下(2023-Spring)</li>
+                                <li>111上(2022-Fall)</li>
+                            </ol>
+
+                        </li>
+
                         
-                        <div class="semester"><span class="material-icons-round">keyboard_arrow_down</span>
-                        學期
-                        </div>
-                        <ol>
-                            <li>113上(2024-Fall)</li>
-                            <li>112暑(2024-Summer)</li>
-                            <li>112下(2024-Spring)</li>
-                            <li>112上(2023-Fall)</li>
-                            <li>111暑(2023-Summer)</li>
-                            <li>111下(2023-Spring)</li>
-                            <li>111上(2022-Fall)</li>
-                        </ol>
-                    </li>
+                        <li>
+                            <div class="grade">
+                            <span class="material-icons-round">keyboard_arrow_down</span>
+                            年級
+                            </div>
+                            <ol>
+                                <li>博士班</li>
+                                <li>碩士班</li>
+                                <li>大四</li>
+                                <li>大三</li>
+                                <li>大二</li>
+                                <li>大一</li>  
+                            </ol>
+                        </li>
+                        
+                        <li>
+                            <div class="time">
+                            <span class="material-icons-round">keyboard_arrow_down</span>
+                            時段
+                            </div>
+                            <ol>
+                                <li>星期一</li>
+                                <li>星期二</li>
+                                <li>星期三</li>
+                                <li>星期四</li>
+                                <li>星期五</li>
+                            </ol>    
+                        </li>
+                        <li>必修</li>
+                        <li>選修</li>
+                        <li>擋修課程</li>
+                        <li>英語授課</li>
 
-                    
-                    <li>
-                        <div class="grade">
-                        <span class="material-icons-round">keyboard_arrow_down</span>
-                        年級
-                        </div>
-                        <ol>
-                            <li>博士班</li>
-                            <li>碩士班</li>
-                            <li>大四</li>
-                            <li>大三</li>
-                            <li>大二</li>
-                            <li>大一</li>  
-                        </ol>
-                    </li>
-                    
-                    <li>
-                        <div class="time">
-                        <span class="material-icons-round">keyboard_arrow_down</span>
-                        時段
-                        </div>
-                        <ol>
-                            <li>星期一</li>
-                            <li>星期二</li>
-                            <li>星期三</li>
-                            <li>星期四</li>
-                            <li>星期五</li>
-                        </ol>    
-                    </li>
-                    <li>必修</li>
-                    <li>選修</li>
-                    <li>擋修課程</li>
-                    <li>英語授課</li>
-
-                </ul>
+                    </ul>
+                </div>
 
                 <!-- 課程資訊表格 -->
                 

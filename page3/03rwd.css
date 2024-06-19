@@ -141,10 +141,7 @@
       position: relative;
     }
   
-    .burger:hover aside {
-      display: block;
-      position: relative;
-    }
+    
   
     .table {
       display: block;
