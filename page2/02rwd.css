@@ -114,7 +114,9 @@
   
   /* 手機 */
   @media screen and (max-width: 480px) {
-
+    .filter li{
+    }
+    
     nav {
       display: flex;
       justify-content: center;

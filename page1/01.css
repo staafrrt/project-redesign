@@ -258,6 +258,7 @@ aside a{
     .course li,
     .bottom li {
       font-size: 18px;
+      text-align: center;
     }
 
     .bottom{
