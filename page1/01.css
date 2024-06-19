@@ -111,10 +111,12 @@ aside a{
     /* outline: coral 1px solid; */
     display: flex;
     flex-direction: column;
-    
-    
 }
 
+.right li>a{
+  text-decoration: none;
+  color: #333333; 
+}
 /* 搜尋區 */
 
 
@@ -178,10 +180,15 @@ aside a{
     color: #9279BA;
 }
 
+.course a:hover{
+  color: #9279BA;
+}
+
 .bottom li:hover{
     color: #9279BA;
 }
 
+.
 
 
 
