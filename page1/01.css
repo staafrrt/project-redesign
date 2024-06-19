@@ -158,6 +158,8 @@ aside a{
     line-height: 28px;
     writing-mode: vertical-lr;
     border-right: #9279BA 1px dashed;  
+    display: flex;
+    align-items: end;
     
     
 }
