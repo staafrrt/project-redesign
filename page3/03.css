@@ -10,7 +10,6 @@ body{
 /* icon顏色 */
 .material-icons-round{
   color: #9279BA;
- 
 }
 
 .wrapper{
@@ -18,8 +17,6 @@ body{
     color: #333333;
     margin: 0 5vw;
     height: 100vh;
-    
-    
 }
 
 nav{
@@ -30,11 +27,14 @@ nav{
     top: 0;
     left: 0;
     z-index: 100;   
+    display: flex;
+    align-items: center;
 }
 
 img{
   width: 26%;
-  aspect-ratio: 2.5 / 1;
+  aspect-ratio: 5 / 1;
+  padding-left: 5vw;
 }
 
 /* 滾動nav */
@@ -59,7 +59,7 @@ aside{
   background-color: #F7F9FA;
   padding: 0 1.5rem;
   border-radius: 16px;
-  box-shadow: 5px 0 10px #AB96C5 ;
+  box-shadow: 2px 2px 10px  #AB96C5 ;
   margin-bottom: 3rem; 
 }
 
@@ -304,7 +304,7 @@ ol li:hover{
   .table_row {
     display: table-row;
     border-radius: 1rem;
-    box-shadow:5px 0 10px #AB96C5 ;
+    box-shadow: 2px 2px 10px  #AB96C5 ;
     
   }
   

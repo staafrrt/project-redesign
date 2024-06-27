@@ -28,12 +28,15 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;       
+  z-index: 100;
+  display: flex;
+  align-items: center;       
 }
 
 img{
   width: 26%;
-  aspect-ratio: 2.5 / 1;
+  aspect-ratio: 5 / 1;
+  padding-left: 5vw;
 }
 
 nav.nav-scrolled{
