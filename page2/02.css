@@ -107,15 +107,49 @@ aside a{
 
 /* 進度bar */
 
-.container{
+.progress-container{
   margin: 1.5rem auto 3rem auto;
-}
-.progress{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 30%;
+  /* margin: 20px 0; */
 }
 
-.done,.active,.none{
+/* .progress{
+  display: flex;
+  justify-content: center;
+  
+} */
+
+.progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  background-color: #4caf50;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.step.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+/* .done,.active,.none{
   
   text-align:center;
 }
@@ -135,7 +169,7 @@ aside a{
   border: #613B9F 3px;
   height:1px;
   width: 10%;
-}
+} */
 
 
 /* 搜尋框 */
