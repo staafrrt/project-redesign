@@ -120,20 +120,18 @@ aside a{
   text-decoration: none;
   color: #333333; 
 }
+
+
 /* 搜尋區 */
-
-
 .course{
     display: flex;
     width: 100%;
     justify-content: space-between;
     /* justify-content: start; */
-    margin-bottom: 5rem;
-    
-      
+    margin-bottom: 5rem;      
 }
 
-.course li{
+.course a{
     padding: 1rem;
     /* margin: 2rem; */
     width: 13%;
@@ -143,8 +141,9 @@ aside a{
     writing-mode: vertical-lr;
     border-left: #9279BA 1px dashed;
     color: #4E707E;   
-
+    text-decoration: none;
 }
+
 
 .bottom{
     display: flex;
@@ -153,7 +152,7 @@ aside a{
     
 }
 
-.bottom li{
+.bottom a{
     padding: 1rem;
     /* margin: 2rem; */
     width: 12%;
@@ -165,12 +164,8 @@ aside a{
     color: #4E707E;     
     display: flex;
     align-items: end;
-    
-    
+    text-decoration: none;
 }
-
-
-
 
 .right img{
     margin: 0 auto;
@@ -183,19 +178,19 @@ aside a{
 
 /* hover效果 */
 
-.course li:hover{
-    color: #9279BA;
-}
 
 .course a:hover{
   color: #9279BA;
+  transform: translateY(0.25rem);
+  transition: transform 0.3s;
 }
 
-.bottom li:hover{
-    color: #9279BA;
+.bottom a:hover{
+  color: #9279BA;
+  transform: translateY(0.25rem);
+  transition: transform 0.3s;
+  
 }
-
-.
 
 
 

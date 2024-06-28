@@ -1,0 +1,48 @@
+@import url(reset.css);
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    background-color: #4caf50;
+    transition: width 0.3s;
+    z-index: -1;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.step.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.buttons {
+    margin-top: 20px;
+}
