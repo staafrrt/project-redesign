@@ -31,7 +31,7 @@ nav{
     align-items: center;
 }
 
-img{
+nav img{
   width: 26%;
   aspect-ratio: 5 / 1;
   padding-left: 5vw;
@@ -100,6 +100,8 @@ aside a{
     width: 75%;
     margin-left: 5%;
 }
+
+.right
 
 
 /* 進度bar */

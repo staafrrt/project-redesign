@@ -33,7 +33,7 @@ nav{
   align-items: center;       
 }
 
-img{
+nav img{
   width: 26%;
   aspect-ratio: 5 / 1;
   padding-left: 5vw;
@@ -141,7 +141,8 @@ aside a{
     font-size: 22px;
     line-height: 28px;
     writing-mode: vertical-lr;
-    border-left: #9279BA 1px dashed;   
+    border-left: #9279BA 1px dashed;
+    color: #4E707E;   
 
 }
 
@@ -160,7 +161,8 @@ aside a{
     font-size: 22px;
     line-height: 28px;
     writing-mode: vertical-lr;
-    border-right: #9279BA 1px dashed;  
+    border-right: #9279BA 1px dashed;
+    color: #4E707E;     
     display: flex;
     align-items: end;
     
