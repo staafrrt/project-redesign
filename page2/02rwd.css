@@ -80,6 +80,7 @@
     /* 表格 */
     .table {
       display: block;
+      margin-bottom: 1rem;
     }
     .table_row:nth-child(2n+3) {
       background: none;
