@@ -200,12 +200,11 @@ aside a{
     width: 60%;
     aspect-ratio:4/3;
     opacity: 80%;
-    border-radius: 5%;
+    border-radius: 16px;
     
 }
 
 /* hover效果 */
-
 
 .course a:hover{
   color: #9279BA;
@@ -220,11 +219,8 @@ aside a{
   
 }
 
-
-
-  
   /* RWD */
-
+  /* 桌機 */
   @media screen and (max-width: 1024px) {
     aside {
       width: 25%;
@@ -234,7 +230,8 @@ aside a{
       margin-left: 5%;
     }
   }
-  
+
+  /* 平板 */
   @media screen and (max-width: 768px) {
     html{
       font-size: 14px;
@@ -262,20 +259,28 @@ aside a{
       flex-direction: column;
       align-items: center;
     }
-    .course li,
-    .bottom li {
+    .course a,
+    .bottom a {
       width: 80%;
       writing-mode: horizontal-tb;
       text-align: center;
+      justify-content: center;
       border: none;
       border-bottom: #9279BA 1px dashed;
     }
 
-    .bottom{
-      flex-direction: column-reverse;
+    .course a,
+    .bottom a:last-child{
+      margin-bottom: 1rem;
+    }
+
+    .bottom img{
+      /* flex-direction: column-reverse; */
+      order: 4;
     }
   }
   
+  /* 手機 */
   @media screen and (max-width: 480px) {
     html{
       font-size: 12px;
