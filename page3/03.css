@@ -63,7 +63,34 @@ aside{
   margin-bottom: 3rem; 
 }
 
-aside li>h1{
+/* aside hover效果 */
+aside li{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+aside li::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(90deg,#79A6BA 0%, #f6f3ff 100%, transparent 70%);
+  filter: blur(50px);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+ 
+}
+
+aside li:hover::after{
+  opacity: 1;
+}
+
+/* end */
+
+aside h1{
   font-size: 22px;
   font-weight: bold;
   line-height: 28px;
@@ -106,22 +133,58 @@ aside a{
 
 /* 進度bar */
 
-.container{
+.progress-container{
   margin: 1.5rem auto 3rem auto;
-  
-}
-.progress{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 30%;
 }
 
-.done,.active,.none{
+/* .progress{
+  display: flex;
+  justify-content: center;
+} */
+
+.progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #79A6BA;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.step:nth-child(4){
+  background-color: #4E707E;
+  color: #F8F6F6;
+}
+
+.step.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* .done,.active,.none{
   
   text-align:center;
 }
 
 .active{
-  /* color: #9279BA; */
+  color: #9279BA;
 }
 #active01{
   color: gray;
@@ -138,7 +201,7 @@ aside a{
   border: #613B9F 3px;
   height:1px;
   width: 10%;
-}
+} */
 
 
 /* 搜尋框 */

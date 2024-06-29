@@ -65,7 +65,34 @@ aside{
     
 }
 
-aside li>h1{
+/* aside hover效果 */
+aside li{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+aside li::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(90deg,#79A6BA 0%, #f6f3ff 100%, transparent 70%);
+  filter: blur(50px);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+ 
+}
+
+aside li:hover::after{
+  opacity: 1;
+}
+
+/* end */
+
+aside h1{
     font-size: 22px;
     font-weight: bold;
     line-height: 28px;
