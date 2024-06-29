@@ -1,23 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&display=swap');
 
+@media screen and (max-width: 1173px){
+  .filter li{
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
-    aside {
-      width: 25%;
+    
+
+    .filter{
+      flex-wrap:wrap;
     }
   
-    .right {
-      width: 70%;
+    .table {
+      width: 85%;
+      overflow-x: scroll;   
     }
+    
   }
 
   @media screen and (max-width: 900px) {
     .table {
-      width: 90%
+      width: 80%
     }
   }
   
+  /* 平板 */
   @media screen and (max-width: 768px) {
 
+    html{
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    
     
     .filter {
       flex-direction: column;
@@ -33,16 +51,27 @@
       width: 100%;
       margin-left: 0;
     }  
-    
+    .burger {
+      display: block;
+      margin-top: 1rem;
+      /* margin-left: 1rem; */
+      position: relative;
+    }
+    aside {
+      display: none;
+      position: absolute;
+      z-index: 10;
+    }
+  
   }
 
   @media screen and (max-width: 650px) {
     /* 導航列 */
 
-    body{
+    /* body{
       font-size: 0.75rem;
       line-height: 0.75rem;
-    }
+    } */
     nav{
       display: flex;
       justify-content: center;
@@ -114,8 +143,15 @@
   
   /* 手機 */
   @media screen and (max-width: 480px) {
-    .filter li{
+    html{
+      font-size: 12px;
+      line-height: 16px;
     }
+
+    /* h1{
+      font-size: 14px;
+      line-height: 20px;
+    } */
     
     nav {
       display: flex;
@@ -123,26 +159,12 @@
       /* background-color: #F7F9FA; */
     }
 
-    .wrapper{
+    /* .wrapper{
       font-size: 0.75rem;
-
     }
+     */
     
-    aside {
-      display: none;
-      position: absolute;
-      z-index: 10;
-    }
-  
-    .burger {
-      display: block;
-      margin-top: 1rem;
-      margin-left: 1rem;
-      position: relative;
-    }
-  
     
-  
     .table {
       display: block;
     }
@@ -184,17 +206,14 @@
   }
   
   @media screen and (max-width: 320px) {
-    body {
-      font-size: 12px;
-      line-height: 18px;
-    }
+    
   
     .search {
       margin: 1rem 5%;
       padding: 0.25rem 0.75rem;
     }
   
-    .text {
+    /* .text {
       font-size: 24px;
-    }
+    } */
   }

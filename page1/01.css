@@ -3,8 +3,8 @@
 
 body{
   background-image: url(../picture/background4.jpg);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* icon顏色 */
@@ -93,9 +93,9 @@ aside li:hover::after{
 /* end */
 
 aside h1{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
-    line-height: 28px;
+    line-height: 1.75rem;
     margin: 1.5rem 0;
 }
 
@@ -109,7 +109,8 @@ aside h1{
 }
    
 .aside-input{
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 input[type="search"]{
@@ -125,7 +126,7 @@ aside a{
 }
 
 .system li:last-child{
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -163,8 +164,8 @@ aside a{
     /* margin: 2rem; */
     width: 13%;
     cursor: pointer;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
     writing-mode: vertical-lr;
     border-left: #9279BA 1px dashed;
     color: #4E707E;   
@@ -184,8 +185,8 @@ aside a{
     /* margin: 2rem; */
     width: 12%;
     cursor: pointer;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
     writing-mode: vertical-lr;
     border-right: #9279BA 1px dashed;
     color: #4E707E;     
@@ -235,10 +236,14 @@ aside a{
   }
   
   @media screen and (max-width: 768px) {
+    html{
+      font-size: 14px;
+      line-height: 20px;
+    }
     .burger {
       display: block;
       margin-top: 1rem;
-      margin-left: 1rem;
+      /* margin-left: 1rem; */
     }
     aside {
       display: none;
@@ -272,9 +277,9 @@ aside a{
   }
   
   @media screen and (max-width: 480px) {
-    body {
-      font-size: 0.75rem;
-      line-height: 1rem;
+    html{
+      font-size: 12px;
+      line-height: 16px;
     }
     nav img {
       width: 50%;
@@ -284,7 +289,7 @@ aside a{
     }
     .course li,
     .bottom li {
-      font-size: 18px;
+      
       text-align: center;
     }
 
@@ -294,18 +299,15 @@ aside a{
   }
   
   @media screen and (max-width: 320px) {
-    body {
-      font-size: 12px;
-      line-height: 18px;
-    }
+    
   
     .search {
       margin: 1rem 5%;
       padding: 0.25rem 0.75rem;
     }
   
-    .text {
+    /* .text {
       font-size: 24px;
-    }
+    } */
   }
   
