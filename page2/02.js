@@ -34,3 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.querySelector('.burger');
+    const aside = document.querySelector('aside');
+
+    burger.addEventListener('click', function() {
+        aside.classList.toggle('aside-active'); // 切換顯示狀態
+    });
+});
