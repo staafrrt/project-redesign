@@ -46,6 +46,10 @@
       justify-content: center;
       /* background-color: #F7F9FA; */
     }
+
+    nav img{
+      padding: 0;
+    }
     
     .filter {
       /* flex-direction: column; */
@@ -62,16 +66,39 @@
       margin-left: 0;
     }  
     .burger {
+      cursor: pointer;
       display: block;
-      margin-top: 1.5rem;
-      /* margin-left: 1rem; */
+      /* margin-top: 1.5rem; */
       position: relative;
+      position: fixed;
+      left: 1rem;
     }
+
+    /* .burger.x .material-icons-round::before {
+      content: 'cancel';
+    }
+     */
+    /* 隱藏icon內容 */
+  .burger .material-icons-round {
+    content: '';
+  }
+
+  /* 當aside展開時顯示cancel */
+  .aside-active .burger .material-icons-round {
+    content: 'cancel';
+  }
+
+  /* 當aside收合時顯示menu */
+  .burger .material-icons-round {
+    content: 'menu';
+  }
+
+   
     aside {
       display: none;
       position: absolute;
       position: fixed; /* 加入固定定位 */
-      margin-top: 10vw; /* 定位至頂部 */
+      margin-top: 0; /* 定位至頂部 */
       left: 0; /* 定位至左邊 */
       height: 100%; /* 全高 */
       z-index: 1000; /* 確保在最上層 */
@@ -154,15 +181,7 @@
       font-size: 12px;
       line-height: 16px;
     }
-
     
-    
-    nav {
-      display: flex;
-      justify-content: center;
-     
-    }
-
     .table {
       display: block;
     }
