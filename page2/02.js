@@ -1,3 +1,4 @@
+// 滾動時nav變色
 document.addEventListener('DOMContentLoaded', function(){
     const nav = document.getElementById('nav');
     const scrollChange = 1; 
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
+// 點擊logo回到頁首
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.getElementById('nav');
     const logo = document.getElementById('logo');
@@ -35,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// aside開合
 document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.burger');
     const aside = document.querySelector('aside');
@@ -49,4 +52,31 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.textContent = 'menu'; // 切換為menu icon
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const filterItems = document.querySelectorAll('.filter li');
+    filterItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // 切換選中狀態
+            this.classList.toggle('selected');
+
+            // 如果有取消按鈕，點擊取消按鈕時移除選中狀態
+            const cancelIcon = this.querySelector('.cancel-icon');
+            if (cancelIcon) {
+                cancelIcon.addEventListener('click', function(e) {
+                    e.stopPropagation(); // 防止事件冒泡到li元素
+                    item.classList.remove('selected');
+                });
+            }
+        });
+    });
+});
+
+item.addEventListener('click', function() {
+    this.classList.toggle('selected');
+    const cancelIcon = this.querySelector('.cancel-icon');
+    if (cancelIcon) {
+        cancelIcon.style.display = this.classList.contains('selected') ? 'inline-block' : 'none';
+    }
 });

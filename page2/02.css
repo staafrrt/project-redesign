@@ -267,12 +267,17 @@ aside a{
  
   padding:0rem 0.75rem 1rem 0.75rem;
   position: relative;
-  cursor: pointer;
-  
-  
+  cursor: pointer;  
 }
+
 .filter>li:hover{
   color: #9279BA;
+}
+
+.filter li.selected {
+  background-color: #9279BA; /* 選中的背景色 */
+  color: white; /* 選中的文字色 */
+  border-radius: 24px;
 }
 
 

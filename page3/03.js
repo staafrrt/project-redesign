@@ -73,3 +73,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const filterItems = document.querySelectorAll('.filter li');
+    filterItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // 切換選中狀態
+            this.classList.toggle('selected');
+
+            // 如果有取消按鈕，點擊取消按鈕時移除選中狀態
+            const cancelIcon = this.querySelector('.cancel-icon');
+            if (cancelIcon) {
+                cancelIcon.addEventListener('click', function(e) {
+                    e.stopPropagation(); // 防止事件冒泡到li元素
+                    item.classList.remove('selected');
+                });
+            }
+        });
+    });
+});
