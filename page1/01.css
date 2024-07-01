@@ -207,13 +207,13 @@ aside a{
 /* hover效果 */
 
 .course a:hover{
-  color: #9279BA;
+  color: #79A6BA;
   transform: translateY(0.25rem);
   transition: transform 0.3s;
 }
 
 .bottom a:hover{
-  color: #9279BA;
+  color: #79A6BA;
   transform: translateY(0.25rem);
   transition: transform 0.3s;
   
