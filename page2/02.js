@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const filterItems = document.querySelectorAll('.filter li');
     filterItems.forEach(item => {

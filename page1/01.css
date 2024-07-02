@@ -37,6 +37,7 @@ nav img{
   width: 26%;
   aspect-ratio: 5 / 1;
   padding-left: 5vw;
+  cursor: pointer;
 }
 
 nav.nav-scrolled{
@@ -221,98 +222,138 @@ aside a{
 
   /* RWD */
   /* 桌機 */
-  @media screen and (max-width: 1024px) {
-    aside {
-      width: 25%;
-    }
-    .right {
-      width: 70%;
-      margin-left: 5%;
-    }
+@media screen and (max-width: 1024px) {
+  aside {
+    width: 25%;
   }
+  .right {
+    width: 70%;
+    margin-left: 5%;
+  }
+}
 
   /* 平板 */
-  @media screen and (max-width: 768px) {
-    html{
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .burger {
-      display: block;
-      margin-top: 1rem;
-      /* margin-left: 1rem; */
-    }
-    aside {
-      display: none;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      /* background-color: #F7F9FA; */
-    }
-    .right {
-      width: 100%;
-      margin: 0;
-    }
-    .course,
-    .bottom {
-      flex-direction: column;
-      align-items: center;
-    }
-    .course a,
-    .bottom a {
-      width: 80%;
-      writing-mode: horizontal-tb;
-      text-align: center;
-      justify-content: center;
-      border: none;
-      border-bottom: #9279BA 1px dashed;
-    }
-
-    .course a,
-    .bottom a:last-child{
-      margin-bottom: 1rem;
-    }
-
-    .bottom img{
-      /* flex-direction: column-reverse; */
-      order: 4;
-    }
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 14px;
+    line-height: 20px;
   }
   
-  /* 手機 */
-  @media screen and (max-width: 480px) {
-    html{
-      font-size: 12px;
-      line-height: 16px;
-    }
-    nav img {
-      width: 50%;
-    }
-    .right img {
-      width: 80%;
-    }
-    .course li,
-    .bottom li {
-      
-      text-align: center;
-    }
+  .burger {
+    cursor: pointer;
+    display: block;
+    /* margin-top: 1.5rem; */
+    position: relative;
+    position: fixed;
+    left: 1rem;
+  }
 
-    .bottom{
-      flex-direction: column-reverse;
-    }
+  /* .burger.x .material-icons-round::before {
+    content: 'cancel';
+  }
+    */
+  /* 隱藏icon內容 */
+  .burger .material-icons-round {
+    content: '';
+  }
+
+  /* 當aside展開時顯示cancel */
+  .aside-active .burger .material-icons-round {
+    content: 'cancel';
+  }
+
+  /* 當aside收合時顯示menu */
+  .burger .material-icons-round {
+    content: 'menu';
+  }
+
+  aside {
+    display: none;
+    position: absolute;
+    position: fixed; /* 加入固定定位 */
+    margin-top: 0; /* 定位至頂部 */
+    left: 0; /* 定位至左邊 */
+    height: 100%; /* 全高 */
+    z-index: 1000; /* 確保在最上層 */
+  }
+  .aside-active {
+    display: block;
   }
   
-  @media screen and (max-width: 320px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    /* background-color: #F7F9FA; */
+  }
+
+  nav img{
+    padding: 0;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .course,
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .course a,
+  .bottom a {
+    width: 80%;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-bottom: #9279BA 1px dashed;
+  }
+
+  .course a,
+  .bottom a:last-child{
+    margin-bottom: 1rem;
+  }
+
+  .bottom img{
+    /* flex-direction: column-reverse; */
+    order: 4;
+  }
+}
+  
+/* 手機 */
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  nav img {
+    width: 50%;
+  }
+  .right img {
+    width: 80%;
+  }
+  .course li,
+  .bottom li {
     
-  
-    .search {
-      margin: 1rem 5%;
-      padding: 0.25rem 0.75rem;
-    }
-  
-    /* .text {
-      font-size: 24px;
-    } */
+    text-align: center;
   }
+
+  .bottom{
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 320px) {
   
+
+  .search {
+    margin: 1rem 5%;
+    padding: 0.25rem 0.75rem;
+  }
+
+  /* .text {
+    font-size: 24px;
+  } */
+}
