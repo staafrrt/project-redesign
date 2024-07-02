@@ -278,7 +278,7 @@ aside a{
 }
 
 .filter>li:nth-child(n+4).selected {
-  background-color: #9279BA; /* 選中的背景色 */
+  background-color: #79A6BA; /* 選中的背景色 */
   color: white; /* 選中的文字色 */
   border-radius: 24px;
 }
@@ -293,11 +293,13 @@ aside a{
 .filter ol{
   
   background-color: #F7F9FA;
+  color: #9279BA;
   position: absolute;
   z-index: 1;
   margin-top: 1rem;
   width: 100%;
   font-size: 0.875rem;
+  border-radius: 0 0 16px 16px;
 
 }
 
@@ -306,13 +308,13 @@ ol li{
   text-align: center;
   cursor: pointer;
   line-height: 2;
-  
+  border-radius: 16px;
   
 }
 
 ol li:hover{
   color: #F7F9FA;
-  background-color: #613B9F;
+  background-color: #79A6BA;
 }
 
 .filter li:hover ol li{
