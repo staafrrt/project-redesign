@@ -318,9 +318,9 @@ input[type="search"]{
   background-color: #F7F9FA;
   position: absolute;
   z-index: 1;
-  margin-top: 24px;
+  margin-top: 1rem;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.875rem;
 
 }
 
