@@ -68,7 +68,6 @@
     .burger {
       cursor: pointer;
       display: block;
-      /* margin-top: 1.5rem; */
       position: relative;
       position: fixed;
       left: 1rem;

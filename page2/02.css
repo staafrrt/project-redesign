@@ -35,9 +35,11 @@ nav{
 
 nav img{
   width: 26%;
+  min-width: 100px;
   aspect-ratio: 5 / 1;
   padding-left: 5VW;
   cursor: pointer;
+
 }
 
 /* 滾動nav */

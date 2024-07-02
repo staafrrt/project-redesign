@@ -35,6 +35,7 @@ nav{
 
 nav img{
   width: 26%;
+  min-width: 100px;
   aspect-ratio: 5 / 1;
   padding-left: 5vw;
   cursor: pointer;
@@ -300,7 +301,7 @@ aside a{
     flex-direction: column;
     align-items: center;
   }
-  
+
   .course a,
   .bottom a {
     width: 80%;
@@ -317,7 +318,6 @@ aside a{
   }
 
   .bottom img{
-    /* flex-direction: column-reverse; */
     order: 4;
   }
 }
@@ -340,9 +340,6 @@ aside a{
     text-align: center;
   }
 
-  .bottom{
-    flex-direction: column-reverse;
-  }
 }
 
 @media screen and (max-width: 320px) {
