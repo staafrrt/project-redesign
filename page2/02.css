@@ -277,7 +277,7 @@ aside a{
   color: #9279BA;
 }
 
-.filter li.selected {
+.filter>li:nth-child(n+4).selected {
   background-color: #9279BA; /* 選中的背景色 */
   color: white; /* 選中的文字色 */
   border-radius: 24px;
