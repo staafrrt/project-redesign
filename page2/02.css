@@ -299,8 +299,10 @@ aside a{
   margin-top: 1rem;
   width: 100%;
   font-size: 0.875rem;
-  border-radius: 0 0 16px 16px;
-
+  /* border-radius: 0 0 16px 16px; */
+  
+  
+  
 }
 
 ol li{
@@ -312,9 +314,12 @@ ol li{
   
 }
 
+
+
 ol li:hover{
   color: #F7F9FA;
   background-color: #79A6BA;
+  
 }
 
 .filter li:hover ol li{
