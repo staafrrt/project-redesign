@@ -227,7 +227,7 @@ aside a{
     color: #b9b9b9;
     width: 70%;
     padding: 0.5rem 1.5rem;
-    margin: 3rem auto 1.5rem;
+    margin: 3rem auto 0.5rem;
     display: flex;
 }
 
@@ -261,17 +261,19 @@ aside a{
     
     border-bottom: #9279BA 2px solid;
     border-radius: 20px;
-   
+    
 
     
 }
 
 .filter>li{
  
-  padding:0rem 0.75rem 1rem 0.75rem;
+  padding:1rem 0.75rem 1rem 0.75rem;
   position: relative;
   cursor: pointer;  
 }
+
+
 
 .filter>li:hover{
   color: #9279BA;
