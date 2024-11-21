@@ -33,7 +33,7 @@ nav{
 
 nav img{
   width: 26%;
-  min-width: 100px;
+  min-width: 150px;
   aspect-ratio: 5 / 1;
   padding-left: 5vw;
   cursor: pointer;
@@ -61,7 +61,8 @@ aside{
   background-color: #F7F9FA;
   padding: 0 1.5rem;
   border-radius: 16px;
-  box-shadow: 2px 2px 10px  #AB96C5 ;
+  /* box-shadow: 2px 2px 10px  #AB96C5 ; */
+  box-shadow: rgba(171, 150, 197, 0.6) 0px 2px 8px 0px;
   margin-bottom: 3rem; 
 }
 
@@ -284,8 +285,8 @@ input[type="search"]{
     justify-content: center;
     margin: 0 15%;
     /* background-color: #fff; */
-    border-bottom: #9279BA 2px solid;
-    border-radius: 20px;   
+    /* border-bottom: #9279BA 2px solid; */
+    /* border-radius: 20px;    */
 }
 
 .filter>li{
@@ -381,7 +382,8 @@ ol li:hover{
   .table_row {
     display: table-row;
     border-radius: 1rem;
-    box-shadow: 2px 2px 10px  #AB96C5 ;
+    /* box-shadow: 2px 2px 10px  #AB96C5 ; */
+    box-shadow: rgba(171, 150, 197, 0.6) 0px 2px 8px 0px;
     transition: transform 0.3s, box-shadow 0.3s;
     
   }
@@ -389,6 +391,7 @@ ol li:hover{
   .table_row:hover {
     transform: translateY(-0.25rem);
     box-shadow: 4px 4px 20px  #9279BA;
+    box-shadow: rgba(171, 150, 197, 0.8) 0px 4px 16px 0px;
   }
   
   .theader {

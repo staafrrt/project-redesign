@@ -226,7 +226,9 @@
 
 @media screen and (max-width: 320px) {
   
-
+  body{
+    min-width: 320px;
+  }
   .search {
   
     margin: 1.5rem 5% 0.75rem 5%;
